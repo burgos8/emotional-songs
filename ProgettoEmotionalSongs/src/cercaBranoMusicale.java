@@ -53,12 +53,12 @@ public class cercaBranoMusicale extends Registrazione {
 						flag = false;
 						hash = line.substring(32).hashCode();
 						System.out.println(line);
-						arr.add(hash);
+						hashArr.add(hash);
 						cont++;			
 						//stampa già avvenuta
 					}else {
 						
-						if(!hashEqual(arr,line.subString(32).hashCode())) {
+						if(!hashEqual(hashArr,line.subString(32).hashCode())) {
 							System.out.println(line);
 						
 						}	
@@ -112,11 +112,11 @@ public class cercaBranoMusicale extends Registrazione {
 						flag = false;
 						hash = line.substring(32).hashCode();
 						System.out.println(line);
-						arr.add(hash);
+						hashArr.add(hash);
 						cont++;						
 					}else {
 						
-						if(!hashEqual(arr,line.substring(32).hashCode())) {
+						if(!hashEqual(hashArr,line.substring(32).hashCode())) {
 							
 							System.out.println(line);
 							cont++;
